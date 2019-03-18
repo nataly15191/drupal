@@ -1,0 +1,6 @@
+name: Custom form in Block
+description: Вывод кастомной формы в кастомном блоке
+core: 8.x
+type: module
+dependencies:
+- block

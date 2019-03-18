@@ -1,0 +1,14 @@
+name: 'Linked image field'
+type: module
+description: 'Provides the ability to create images linked to any URL.'
+package : Fields
+# core: 8.x
+dependencies:
+  - drupal:image
+  - drupal:link
+
+# Information added by Drupal.org packaging script on 2018-07-18
+version: '8.x-1.x-dev'
+core: '8.x'
+project: 'field_image_link'
+datestamp: 1531954729

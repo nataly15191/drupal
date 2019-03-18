@@ -1,0 +1,76 @@
+  {% if page.branding or page.navigation %}
+    <nav class="navbar navbar-default navbar-fixed-top mainnav">
+        
+        <div class="navbar-info">
+          <div class="container">
+            <div class="logo-grid">
+            {{ page.branding }}
+            </div>
+          </div>
+        </div>  
+        
+        <div class="navbar-menu">
+          <div class="container">
+          <div class="collapse navbar-collapse" id="theoneNavbar">
+          {{ page.navigation }}
+          </div>
+          </div>
+        </div>
+      
+    </nav>
+  {% endif %}
+
+    <!-- Container (Banner) -->
+
+    <header>
+      <div class="header text-center">
+        {% if page.banner %}
+        {{ page.banner }}
+          {% endif %}
+      </div>
+    </header>
+
+
+
+    <!-- Container (Content Section) -->
+  {% if page.content %}
+    
+      {{ page.content }}
+    
+  {% endif %}
+
+
+    <!-- Footer -->
+  {% if page.footer1 or page.footer2 or page.footer3 or page.footer4 %}
+    <footer>
+      <div class="container foot">
+        <div class="footer">
+          <div class="col-sm-3">
+            {{ page.footer1 }}
+          </div>
+          <div class="col-sm-3">
+            {{ page.footer2 }}
+          </div>
+          <div class="col-sm-3">
+            {{ page.footer3 }}
+            {{ page.foot_address }}
+            {{ page.foot_phone }}
+            {{ page.foot_email }}
+          </div>
+          <div class="col-sm-3">
+            {{ page.footer4 }}
+
+          </div>
+        </div>
+      </div>
+    </footer>
+  {% endif %}
+
+  {% if page.watermark or page.footer_menu %}
+    <div class="foot-container clearfix">
+      <div class="container footer-foot">
+        {{ page.watermark }}
+        {{ page.footer_menu }}
+    </div>
+  </div>
+{% endif %}

@@ -1,0 +1,18 @@
+default:
+  label: 'Default'
+  file: assets/vendor/jcarousel/skins/default/jcarousel-default.css
+
+tango:
+  label: 'Tango'
+  file: assets/vendor/jcarousel/skins/tango/jcarousel-tango.css
+  weight: 1
+  
+clients:
+  label: 'Clients'
+  file: assets/vendor/jcarousel/skins/clients/jcarousel-clients.css
+  weight: 2
+  
+reviews:
+  label: 'Reviews'
+  file: assets/vendor/jcarousel/skins/reviews/jcarousel-reviews.css
+  weight: 3
